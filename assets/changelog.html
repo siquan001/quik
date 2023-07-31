@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUIK起始页 - 更新日志</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    ul>li{
+      padding: 10px 0;
+    }
+    ul li .version{
+      padding-left: 1em;
+      font-weight: 600;
+      font-size: 20px;
+      position: relative;
+    }
+    ul li .version::before{
+      content: '';
+      background-color: #09f;
+      border-radius: 5px;
+      width: 5px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    ol{
+      margin-left: 40px;
+      margin-top: 6px;
+    }
+    ul li .time{
+      color: #888;
+      line-height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <div class="version">1.0.0</div>
+      <ol>
+        <li>梦开始的地方</li>
+      </ol>
+      <div class="time">2023/8/8</div>
+    </li>
+  </ul>
+  <script>
+    if(parent.document.body.classList.contains('dark')){
+      document.documentElement.style.colorScheme='dark';
+    }
+  </script>
+</body>
+</html>

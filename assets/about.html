@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUIK起始页 - 关于页面</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    img{
+      margin: 20px auto;
+      display: block;
+      width: 300px;
+    }
+    div{
+      margin: 10px;
+    }
+    div>p{
+      line-height: 24px;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <img src="../img/logo.svg" alt="">
+  <div class="message">
+    <p class="version">版本：<script>document.write(parent.version.name)</script></p>
+    <p class="version_code">版本号：<script>document.write(parent.version.code)</script></p>
+  </div>
+  <div class="copyright">
+    <p class="author">制作者：<a href="https://siquan001.github.io/?ref=quik" target="_blank">陈思全</a></p>
+    <p class="notice">版权声明：QUIK起始页以 MIT License 声明，版权归制作者所有</p>
+  </div>
+  <script>
+    if(parent.document.body.classList.contains('dark')){
+      document.documentElement.style.colorScheme='dark';
+      document.querySelector("img").style.filter='invert(1)';
+    }
+  </script>
+</body>
+</html>
