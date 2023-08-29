@@ -77,44 +77,25 @@
 
 ## 更新日志
 
-### 1.3.1
+查看changelog.json
 
-1.修改QUIK起始页使用的图片相关API
-2.修改QUIK起始页使用的热榜相关API
-3.故梦API再也不用了！！！
+## 特别鸣谢
 
-2023/8/22
-
-### 1.3
-1.添加休息模式(Beta)，Ctrl+Alt+B进入，Ctrl+Q退出，累了就休息一下吧~
-2.修改用户协议与隐私政策、新手文档等
-      
-2023/8/20
-
-### 1.2.1
-      
-1.修复已知BUG,优化用户体验
-      
-2023/8/20
-
-### 1.2
-1.便笺
-支持在第一界面就可以直接添加固定的便签，并在编辑页面添加固定按钮。
-2.搜索框<br>添加一个搜索框仅搜索的设置
-3.链接<br>下方链接可以支持大中小三个样式
-4.热点<br>支持把热点添加到首页
-5.计算器<br>修复+/-键
-
-2023/8/18
-    
-### 1.0.1
-      
-1.修复了一个已知BUG
-      
-2023/8/3
-    
-### 1.0.0
-
-1.梦开始的地方
-      
-2023/8/1
+<ul>
+    <li><a href="https://jquery.com/" target="_blank">jquery(核心)</a></li>
+    <li><a href="http://translate.zvo.cn/" target="_blank">translate.zvo.cn(翻译)</a></li>
+    <li><a href="https://tools.2345.com/rili.htm" target="_blank">2345万年历(农历查询)</a></li>
+    <li><a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap Icons(应用图标)</a></li>
+    <li><a href="https://api.pearktrue.cn/" target="_blank">PearAPI(今日热榜)</a></li>
+    <li><a href="https://loliapi.com/" target="_blank">LoliApi(二次元背景API,休息模式背景提供)</a></li>
+    <li><a href="https://blog.ltyuanfang.cn/" target="_blank">远方博客(休息模式背景提供)</a></li>
+    <li><a href="https://dmoe.cc/" target="_blank">樱花(休息模式背景提供)</a></li>
+    <li><a href="https://img.xjh.me/" target="_blank">岁月小筑(休息模式背景提供)</a></li>
+    <li><a href="https://www.dujin.org/" target="_blank">缙哥哥博客(休息模式背景提供)</a></li>
+    <li><a href="https://hitokoto.cn/" target="_blank">hitokoto(随机一言)</a></li>
+    <li><a href="https://imgapi.cn/" target="_blank">IMGAPI(风景背景API,休息模式背景提供)</a></li>
+    <li><a href="https://bing.shangzhenyang.com/" target="_blank">bing.shangzhenyang.com(必应壁纸API)</a></li>
+    <li><a href="https://tianqi.qq.com/" target="_blank">腾讯天气(天气服务)</a></li>
+    <li><a href="https://map.qq.com/" target="_blank">腾讯地图API(定位服务)</a></li>
+    <li><a href="https://livere.com/" target="_blank">来必力（评论服务）</a></li>
+  </ul>

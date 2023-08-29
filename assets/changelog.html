@@ -41,57 +41,30 @@
 </head>
 <body>
   <ul>
-    <li>
-      <div class="version">1.3.1</div>
-      <ol>
-        <li>修改QUIK起始页使用的图片相关API</li>
-        <li>修改QUIK起始页使用的热榜相关API</li>
-        <li>故梦API再也不用了！！！</li>
-      </ol>
-      <div class="time">2023/8/22</div>
-    </li>
-    <li>
-      <div class="version">1.3</div>
-      <ol>
-        <li>添加休息模式(Beta)，Ctrl+Alt+B进入，Ctrl+Q退出，累了就休息一下吧~</li>
-        <li>修改用户协议与隐私政策、新手文档等</li>
-      </ol>
-      <div class="time">2023/8/20</div>
-    </li>
-    <li>
-      <div class="version">1.2.1</div>
-      <ol>
-        <li>修复已知BUG,优化用户体验</li>
-      </ol>
-      <div class="time">2023/8/20</div>
-    </li>
-    <li>
-      <div class="version">1.2</div>
-      <ol>
-        <li>便笺<br>支持在第一界面就可以直接添加固定的便签，并在编辑页面添加固定按钮。</li>
-        <li>搜索框<br>添加一个搜索框仅搜索的设置</li>
-        <li>链接<br>下方链接可以支持大中小三个样式</li>
-        <li>热点<br>支持把热点添加到首页</li>
-        <li>计算器<br>修复+/-键</li>
-      </ol>
-      <div class="time">2023/8/18</div>
-    </li>
-    <li>
-      <div class="version">1.0.1</div>
-      <ol>
-        <li>修复了一个已知BUG</li>
-      </ol>
-      <div class="time">2023/8/3</div>
-    </li>
-    <li>
-      <div class="version">1.0.0</div>
-      <ol>
-        <li>梦开始的地方</li>
-      </ol>
-      <div class="time">2023/8/1</div>
-    </li>
   </ul>
   <script>
+    // 使用XMLHttpRequest请求changelog.json
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '../changelog.json');
+    xhr.send();
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState === 4 && xhr.status === 200){
+        var changelog = JSON.parse(xhr.responseText);
+        var ul = document.querySelector('ul');
+        for(var k in changelog){
+          var li = document.createElement('li');
+          li.innerHTML = '\
+            <div class="version">'+k+'</div>\
+            <ol>\
+              '+changelog[k].updates.map(function(change){return '<li>'+change+'</li>'}).join('')+'\
+            </ol>\
+            <div class="time">'+changelog[k].time+'</div>\
+          ';
+          ul.appendChild(li);
+        }
+          
+      }
+    };
     if(parent.document.body.classList.contains('dark')){
       document.documentElement.style.colorScheme='dark';
 document.body.background='#222';
